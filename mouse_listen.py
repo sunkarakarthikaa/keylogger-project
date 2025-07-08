@@ -1,6 +1,6 @@
 from pynput.mouse import Listener
 
-def writetofile(x, y): #x,y are pixels
+def writetofile(x, y): #x,y represent the current position of the mouse cursor on the screen, in pixels.
     print('position is {0}'.format((x,y)))
   
 
